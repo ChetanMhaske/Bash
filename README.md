@@ -1,16 +1,12 @@
-# 🛡️ Bash Security Tools
+# 🔐 Bash Security Tools
 
-A collection of Bash scripts for system management, cybersecurity tasks, and threat detection.
+A growing collection of Bash scripts for system management and cybersecurity tasks, starting with a secure password generator.
 
 ## 📂 Scripts Included
 
-| Script               | Description                                      |
-|----------------------|--------------------------------------------------|
-| `password_generator.sh` | Secure password generator using OpenSSL         |
-| `system_info.sh`        | Displays CPU, memory, disk, and OS info        |
-| `port_scanner.sh`       | Basic port scanner using `nc` or `nmap`        |
-| `log_analyzer.sh`       | Parses logs for suspicious activity            |
-| `user_audit.sh`         | Lists users, login info, and last activity     |
+| Script                  | Description                                      |
+|--------------------------|--------------------------------------------------|
+| `password_generator.sh` | Secure password generator using OpenSSL and Base64 |
 
 ## 🔧 Usage
 
