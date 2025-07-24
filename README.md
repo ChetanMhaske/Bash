@@ -14,4 +14,4 @@ A growing collection of Bash scripts for system administration and cybersecurity
 ```bash
 git clone https://github.com/ChetanMhaske/Bash.git
 cd Bash
-chmod +x *.sh
+chmod +x file_name.sh
