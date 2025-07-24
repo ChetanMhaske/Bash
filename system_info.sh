@@ -2,19 +2,14 @@
 
 echo "SYSTEM INFORMATION"
 
-#Operating System
-
 os_name=$(cat /etc/os-release | grep PRETTY_NAME | cut -d= -f2 | tr -d '"')
 
-
-#Kernel
 kernel_version=$(uname -r)
 
 echo "OS         : $os_name"
 echo "Kernel     : $kernel_version"
 echo "Uptime     : $(uptime -p)"
 
-# CPU Info
 cpu_model=$(grep -m1 'model name' /proc/cpuinfo | cut -d ':' -f2 | sed 's/^ //')
 cpu_cores=$(nproc)
 
