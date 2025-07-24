@@ -29,6 +29,5 @@ echo "Memory     : $mem_info"
 disk_info=$(df -h / )
 echo "Disk (/): $disk_info"
 
-# IP Address (non-loopback)
 ip_address=$(ip -4 addr show | grep inet | grep -v 127.0.0.1 | awk '{print $2}' | cut -d/ -f1 | head -n1)
 echo "IP Address : ${ip_address:-Unavailable}"
