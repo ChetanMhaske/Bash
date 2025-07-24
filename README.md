@@ -1,17 +1,17 @@
-# 🔐 Bash Security Tools
+# ⚙️ Bash Toolbox
 
-A growing collection of Bash scripts for system management and cybersecurity tasks, starting with a secure password generator.
+A growing collection of Bash scripts for system administration and cybersecurity tasks.
 
 ## 📂 Scripts Included
 
-| Script                  | Description                                      |
-|--------------------------|--------------------------------------------------|
-| `password_generator.sh` | Secure password generator using OpenSSL and Base64 |
+| Script                     | Description                                                    |
+|---------------------------|----------------------------------------------------------------|
+| `password_generator.sh`   | Generates 5 strong random passwords using OpenSSL + Base64     |
+| `system_info.sh`          | Displays OS, kernel, uptime, CPU, memory, disk, and IP info   |
 
 ## 🔧 Usage
 
-Clone the repo:
 ```bash
-git clone https://github.com/ChetanMhaske/bash-security-tools.git
-cd bash-security-tools/scripts
+git clone https://github.com/ChetanMhaske/Bash.git
+cd Bash
 chmod +x *.sh
