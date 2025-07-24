@@ -21,11 +21,9 @@ cpu_cores=$(nproc)
 echo "CPU        : $cpu_model"
 echo "CPU Cores  : $cpu_cores"
 
-# Memory Info
 mem_info=$(free -h )
 echo "Memory     : $mem_info"
 
-# Disk Usage (root only)
 disk_info=$(df -h / )
 echo "Disk (/): $disk_info"
 
