@@ -16,3 +16,6 @@ This repository contains various Bash scripts useful for Linux system administra
    ```bash
    git clone https://github.com/ChetanMhaske/Bash.git
    cd Bash
+   chmod +x script_name.sh
+   ./script_name.sh
+
