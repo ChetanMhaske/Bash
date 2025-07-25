@@ -8,8 +8,7 @@ A growing collection of Bash scripts for system administration and cybersecurity
 |---------------------------|----------------------------------------------------------------|
 | `password_generator.sh`   | Generates 5 strong random passwords using OpenSSL + Base64     |
 | `system_info.sh`          | Displays OS, kernel, uptime, CPU, memory, disk, and IP info   |
-| `password_generator.sh`  | Generates secure random passwords with A-Z, a-z, 0-9, and symbols |
-
+| `open_ports.sh`          | Checks for open TCP/UDP ports using `ss` or `netstat` |
 
 ## 🔧 Usage
 
