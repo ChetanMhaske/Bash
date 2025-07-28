@@ -1,4 +1,4 @@
-#!/bin/bash
+#bash
 
 echo "Threat Detection Log Monitor"
 echo "Analyzing logs from journalctl"
