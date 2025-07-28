@@ -29,9 +29,9 @@ echo "IP Address : ${ip_address:-Unavailable}"
 <<comment
 Command/Flag	                    Meaning
 `cat /etc/os-release	            grep PRETTY_NAME`
-uname -r	                        Retrieves the current Linux kernel version
-uptime -p	                        Displays how long the system has been running
-grep 'model name' /proc/cpuinfo	  Shows the CPU model name
+uname -r	                    Retrieves the current Linux kernel version
+uptime -p	                    Displays how long the system has been running
+grep 'model name' /proc/cpuinfo	    Shows the CPU model name
 nproc	                            Counts number of available CPU cores
 free -h	                          Displays memory info in a human-readable format
 df -h /	                          Shows disk space usage for the root partition
