@@ -24,3 +24,17 @@ echo "Disk (/): $disk_info"
 
 ip_address=$(ip -4 addr show | grep inet | grep -v 127.0.0.1 | awk '{print $2}' | cut -d/ -f1 | head -n1)
 echo "IP Address : ${ip_address:-Unavailable}"
+
+
+<<comment
+Command/Flag	                   Meaning
+`cat /etc/os-release	           grep PRETTY_NAME`
+uname -r	                       Retrieves the current Linux kernel version
+uptime -p	                       Displays how long the system has been running
+grep 'model name' /proc/cpuinfo	 Shows the CPU model name
+nproc	                           Counts number of available CPU cores
+free -h	                         Displays memory info in a human-readable format
+df -h /	                         Shows disk space usage for the root partition
+`ip -4 addr show ...	           grep inet
+${ip_address:-Unavailable}	     Fallback: if no IP is found, prints "Unavailable"
+comment
