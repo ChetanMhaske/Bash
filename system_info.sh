@@ -36,5 +36,5 @@ nproc	                           Counts number of available CPU cores
 free -h	                         Displays memory info in a human-readable format
 df -h /	                         Shows disk space usage for the root partition
 `ip -4 addr show ...	           grep inet
-${ip_address:-Unavailable}	     Fallback: if no IP is found, prints "Unavailable"
+"${ip_address:-Unavailable}"	   Fallback: if no IP is found, prints "Unavailable"
 comment
