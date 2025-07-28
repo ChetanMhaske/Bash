@@ -21,9 +21,13 @@ journalctl -q -o short-iso | grep "authentication failure" | tail -n 10
 
 
 <<comment
-journalctl -u ssh:-	Filters logs related only to the SSH service
--q:-	Quiet mode (no headers or timestamps added by journalctl)
--o short-iso:-	ISO timestamp format for clarity
-grep "...":-	Looks for specific keywords indicating suspicious activity
-tail -n 10:-	Limits output to the 10 most recent relevant entries
->>
+| Command/Flag                    | Meaning                                                     |
+| ------------------------------- | ----------------------------------------------------------- |
+| `journalctl -u ssh`             | Filters logs specifically for the SSH service               |
+| `-q`                            | Quiet mode – suppresses headers and extra info              |
+| `-o short-iso`                  | Formats logs with ISO timestamps for readability            |
+| `grep "Failed password"`        | Filters lines related to failed SSH login attempts          |
+| `grep "sudo"`                   | Captures usage of the `sudo` command (privilege escalation) |
+| `grep "authentication failure"` | Searches for signs of brute-force or failed login attempts  |
+| `tail -n 10`                    | Displays the last 10 matching entries                       |
+comment
